@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3 id="demo"></h3>
+    <h3 id="demo1"></h3>
+    <h3 id="demo2"></h3>
+    <h3 id="demo3"></h3>
+
+
+    <script type="text/javascript">
+      var fruits = ["Apple","Banana"];
+      fruits.splice(1,0,"Mango","Orange","Lemon","Peach","Pineapple");
+      document.getElementById("demo").innerHTML = fruits;
+      document.getElementById("demo1").innerHTML = fruits[3];
+      document.getElementById("demo2").innerHTML = fruits.length;
+      fruits.reverse();
+      document.getElementById("demo3").innerHTML = fruits;
+    </script>
+  </body>
+</html>

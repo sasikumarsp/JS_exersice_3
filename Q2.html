@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h3 id="demo"></h3>
+    <h3 id="demo1"></h3>
+    <script type="text/javascript">
+            var num = [100, 212, 78, 433, 89];
+            document.getElementById("demo").innerHTML = myArrayMax(num);
+
+        function myArrayMax(arr) {
+        return Math.max.apply(null, arr);
+        }
+
+        document.getElementById("demo1").innerHTML = myArrayMin(num);
+        function myArrayMin(arr) {
+        var len = arr.length;
+        var min = Infinity;
+        while (len--) {
+          if (arr[len] < min) {
+            min = arr[len];
+          }
+        }
+        return min;
+      }
+    </script>
+  </body>
+</html>
